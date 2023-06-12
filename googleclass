@@ -1,0 +1,40 @@
++-----------------------+         +-------------------------+        +------------------------+
+|      MapService       |         |       GeocodingAPI       |        |     DirectionsAPI      |
++-----------------------+         +-------------------------+        +------------------------+
+|                       |         |                         |        |                        |
+| - mapData: MapData    |         |                         |        |                        |
+|                       |         |                         |        |                        |
+| + displayMap(): void  |         |                         |        |                        |
+| + setMapData(): void  |         |                         |        |                        |
+| + getMapData():       |         |                         |        |                        |
+|   MapData             |         |                         |        |                        |
++-----------------------+         +-------------------------+        +------------------------+
+
++-----------------------+         +-------------------------+
+|       MapData         |         |        GeocodingData     |
++-----------------------+         +-------------------------+
+| - markers: Marker[]   |         | - address: string       |
+| - polylines:          |         | - latitude: float       |
+|   Polyline[]          |         | - longitude: float      |
+|                       |         |                         |
+| + addMarker(): void   |         |                         |
+| + addPolyline(): void |         |                         |
+| + getMarkers():       |         |                         |
+|   Marker[]            |         |                         |
+| + getPolylines():     |         |                         |
+|   Polyline[]          |         |                         |
++-----------------------+         +-------------------------+
+
++-----------------------+         +-------------------------+
+|        Marker         |         |       Polyline          |
++-----------------------+         +-------------------------+
+| - position:           |         | - start: LatLng         |
+|   LatLng              |         | - end: LatLng           |
+| - title: string       |         | - color: string         |
+|                       |         |                         |
+| + setPosition(): void |         |                         |
+| + setTitle(): void    |         |                         |
+| + getPosition():      |         |                         |
+|   LatLng              |         |                         |
+| + getTitle(): string  |         |                         |
++-----------------------+         +-------------------------+

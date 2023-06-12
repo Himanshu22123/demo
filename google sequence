@@ -1,0 +1,29 @@
+UserInterface         MapService          GeocodingAPI          MapData
+
+    |                      |                      |                       |
+    |   setMapData()       |                      |                       |
+    |--------------------->|                      |                       |
+    |                      |                      |                       |
+    |                      |   geocodeAddress()   |                       |
+    |                      |------------------->  |                       |
+    |                      |                      |                       |
+    |                      |                      |   address,            |
+    |                      |                      |   latitude,           |
+    |                      |                      |   longitude           |
+    |                      |                      |<----------------------|
+    |                      |                      |                       |
+    |                      |  addMarker()         |                       |
+    |                      |------------------->  |                       |
+    |                      |                      |                       |
+    |                      |                      |                       |
+    |                      |    displayMap()      |                       |
+    |                      |------------------->  |                       |
+    |                      |                      |                       |
+    |                      |                      |                       |
+    |                      |                      |     markers,          |
+    |                      |                      |     polylines         |
+    |                      |                      |---------------------->|
+    |                      |                      |                       |
+    |                      |                      |                       |
+    |                      |                      |                       |
+    |                      |                      |                       |
